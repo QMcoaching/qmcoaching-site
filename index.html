@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quentin Coach – Coaching Personnalisé</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Styles personnalisés -->
+    <style>
+        .gradient-bg {
+            background: linear-gradient(90deg, #6366f1 0%, #a78bfa 100%);
+        }
+        .hero-pattern {
+            background: linear-gradient(135deg, #f3e8ff 0%, #e0e7ff 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 16px 40px rgba(99, 102, 241, 0.15);
+        }
+        .social-icon:hover {
+            filter: brightness(1.2);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Hero Section -->
+    <header class="pt-24 pb-16 md:pt-32 md:pb-24 hero-pattern">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-800">Repoussez vos limites</h1>
+            <p class="text-xl md:text-2xl text-gray-600 mb-10 max-w-3xl mx-auto">Coaching personnalisé pour atteindre vos objectifs physiques</p>
+            <a href="#contact" class="gradient-bg text-white font-medium py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition duration-300 inline-block">Commencer maintenant</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <div class="relative">
+                        <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden mx-auto gradient-bg p-1">
+                            <svg class="w-full h-full rounded-full bg-white p-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="#6366F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6 21V19C6 17.9391 6.42143 16.9217 7.17157 16.1716C7.92172 15.4214 8.93913 15 10 15H14C15.0609 15 16.0783 15.4214 16.8284 16.1716C17.5786 16.9217 18 17.9391 18 19V21" stroke="#6366F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-indigo-100 rounded-full z-[-1]"></div>
+                        <div class="absolute -top-4 -left-4 w-24 h-24 bg-purple-100 rounded-full z-[-1]"></div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-800">À propos de moi</h2>
+                    <p class="text-gray-600 mb-4 leading-relaxed">Je m'appelle Quentin, passionné de musculation depuis bientôt 9 ans. Dès mes débuts, j'ai été fasciné par tout ce qui touche à la préparation physique et à l'optimisation des performances. Très vite, c'est l'hypertrophie — le développement musculaire — qui est devenue ma spécialité.</p>
+                    <p class="text-gray-600 mb-4 leading-relaxed">Au fil des années, je n'ai cessé de me former, de tester, d'apprendre et de me perfectionner, à travers la théorie mais surtout la pratique. Cette passion m'a naturellement conduit à me professionnaliser et à obtenir mon diplôme, pour aujourd'hui pouvoir transmettre mon expérience et mon expertise.</p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">Je propose désormais un accompagnement en ligne, personnalisé et sérieux, destiné à celles et ceux qui souhaitent progresser efficacement, qu'ils soient débutants ou confirmés. Mon objectif : t'aider à atteindre tes objectifs physiques de manière durable, avec une approche basée sur la méthode, l'écoute et la progression intelligente.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="bg-indigo-50 px-4 py-2 rounded-full">
+                            <span class="text-indigo-600 font-medium">Hypertrophie</span>
+                        </div>
+                        <div class="bg-indigo-50 px-4 py-2 rounded-full">
+                            <span class="text-indigo-600 font-medium">Performance</span>
+                        </div>
+                        <div class="bg-indigo-50 px-4 py-2 rounded-full">
+                            <span class="text-indigo-600 font-medium">Coaching personnalisé</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4 text-gray-800">Mes formules de coaching</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Des programmes adaptés à vos besoins pour vous accompagner dans votre parcours de transformation physique.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Formule 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 card-hover">
+                    <div class="gradient-bg p-6 text-white">
+                        <h3 class="text-xl font-bold mb-2">Formule Call</h3>
+                        <p class="opacity-90">Consultation et programme personnalisé</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-2xl font-bold text-gray-800 mb-4">40€</div>
+                        <p class="text-gray-600 italic mb-6">Parfait pour débloquer une situation, affiner ta stratégie ou bénéficier d'un regard extérieur.</p>
+                        <ul class="mb-8 space-y-3">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span class="text-gray-600">Questionnaire pour mieux répondre à vos attentes</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span class="text-gray-600">Réponses aux questions envoyées en amont</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span class="text-gray-600">Discussion par rapport à vos demandes et vos besoins</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span class="text-gray-600">Conseils nutritionnels</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span class="text-gray-600">Élaboration d'un programme en fonction de vos objectifs et votre niveau</span>
+                            </li>
+                        </ul>
+                        <a href="#contact" class="block text-center py-3 px-6 rounded-lg border-2 border-indigo-600 text-indigo-600 font-medium hover:bg-indigo-50 transition duration-300">Choisir cette formule</a>
+                    </div>
+                </div>
+                
+                <!-- Formule 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 card-hover">
+                    <div class="gradient-bg p-6 text-white relative">
+                        <div class="absolute top-0 right-0 bg-yellow-400 text-gray-800 text-xs font-bold px-3 py-1 rounded-bl-lg">RECOMMANDÉ</div>
+                        <h3 class="text-xl font-bold mb-2">Suivi à distance</h3>
+                        <p class="opacity-90">Accompagnement complet et personnalisé</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-2xl font-bold text-gray-800 mb-4">100€ <span class="text-sm font-normal text-gray-600">/ mois</span></div>
+                        <p class="text-gray-600 italic mb-6">Idéal pour ceux qui veulent un cadre structuré, du soutien et des résultats concrets.</p>
+                        <ul class="mb-8 space-y-3">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span class="text-gray-600">Rencontre en présentiel ou en visio</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span class="text-gray-600">Questionnaire pour mieux répondre à vos attentes</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span class="text-gray-600">Programme adapté à votre morphologie, objectif et niveau</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span class="text-gray-600">Bilan et mise à jour hebdomadaire</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span class="text-gray-600">Plan nutritionnel élaboré avec vous</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span class="text-gray-600">Communication continue : réponses aux questions, feedback, correction des mouvements, adaptation de l'entraînement</span>
+                            </li>
+                        </ul>
+                        <a href="#contact" class="block text-center py-3 px-6 rounded-lg gradient-bg text-white font-medium hover:shadow-lg transition duration-300">Choisir cette formule</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 gradient-bg text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Contactez-moi</h2>
+                <p class="max-w-2xl mx-auto opacity-90">Pour tout renseignement ou demande de coaching</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="p-8">
+                    <h3 class="text-xl font-bold mb-6 text-gray-800">Mes coordonnées</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-indigo-100 p-2 rounded-full mr-4">
+                                <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Email</h4>
+                                <p class="text-gray-600">quentin.mattei.coaching@gmail.com</p>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-800 mb-4">Réseaux sociaux</h4>
+                            <div class="flex space-x-4">
+                                <a href="https://www.facebook.com/profile.php?id=." target="_blank" class="social-icon bg-blue-600 text-white p-2 rounded-full">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z"/></svg>
+                                </a>
+                                <a href="https://www.instagram.com/q.m_coaching/" target="_blank" class="social-icon bg-pink-600 text-white p-2 rounded-full">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.
